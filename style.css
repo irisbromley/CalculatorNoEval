@@ -1,0 +1,93 @@
+/* screen reset */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 5px rgba(92, 92, 92, 0.5);
+}
+
+.screen {
+    text-align: right;
+    background-color: #551757;
+    color: #ded89a;
+    border: solid 1px black;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    font-size: 40px;
+    margin: auto;
+    border: none;
+    padding-right: 20px;
+}
+
+
+.all-keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+button {
+    border: 0.5px solid #999;
+    font-size: 25px;
+    cursor: pointer;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .06));
+}
+
+.button:hover {
+    background-color: rgb(136, 136, 136);
+    color: white;
+    transition: ease-in-out 0.4s;
+}
+
+.operator {
+    color: #ad5604;
+}
+
+.all-clear {
+    background-color: #ff6ad7;
+    border-color: #ff6ad7;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: #ff1cc2;
+}
+
+.equal-sign {
+    background-color: #9f21a3;
+    border-color: #9f21a3;
+    color: #fff;
+    height: 100%;
+    grid-area: 2/4/6;
+}
+
+.equal-sign:hover {
+    background-color: #79077d;
+}
